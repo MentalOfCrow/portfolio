@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.languages a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.intro, .whoami, .services, .tools, .projects, .skills, .character, .experience, .certifications, .appointment, .blogs, .contact {
+    padding: 50px;
+    border-bottom: 1px solid #333;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.hello {
+    background-color: #ff66cc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.contact-info p, .social-icons a {
+    margin: 10px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.intro-image img {
+    border-radius: 50%;
+    border: 5px solid #ff66cc;
+    width: 150px;
+}
+
+.whoami {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whoami-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.whoami-text {
+    max-width: 50%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.skill img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff66cc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 30%;
+    text-align: center;
+}
+
+.service img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin-bottom: 20px;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.service ul li {
+    margin-bottom: 10px;
+}
+
+.tools-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.tools-logos img {
+    width: 100px;
+    margin: 10px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.project-details {
+    max-width: 60%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-set {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.skill-set .skill {
+    width: 30%;
+    text-align: center;
+}
+
+.character-traits {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.character-traits .trait {
+    width: 30%;
+    text-align: center;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-between;
+}
+
+.academic-background, .professional-experience {
+    width: 45%;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry h3 {
+    margin-bottom: 10px;
+}
+
+.certifications {
+    text-align: center;
+}
+
+.certifications img {
+    width: 200px;
+    margin: 10px;
+}
+
+.appointment {
+    text-align: center;
+}
+
+.appointment .availability {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.appointment img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.blogs {
+    text-align: center;
+}
+
+.blogs .blog-entry {
+    margin: 20px 0;
+}
+
+.blogs .blog-entry h3 {
+    margin-bottom: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    margin-top: 10px;
+}
+
+.contact form input, .contact form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.contact form button {
+    margin-top: 20px;
+}
