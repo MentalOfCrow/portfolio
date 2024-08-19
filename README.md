@@ -21,6 +21,8 @@ Pour profiter pleinement de ce portfolio, je recommande de le visualiser en util
 
    ![Installation de Live Server](img/lancementprojet.png) = Extension le plus simple et important pour que ca fonctionne
 
+   ![Utilité de Live Server](img/liveServeurUtile.png) = Séléctionner le fichier index.html puis lancer le serveur en bas à droite pour acceder au projet
+
 ### Lancement du projet
 
 1. Clonez ou téléchargez les fichiers du projet sur votre machine.
