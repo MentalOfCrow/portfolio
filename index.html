@@ -1,281 +1,484 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camil Bouteba</title>
+    <title data-fr="Hugo Bisserier" data-en="Hugo Bisserier">Hugo Bisserier</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
+<header>
+    <nav>
+        <div class="logo"></div>
+        <ul>
+            <li><a href="#">HUGO BISSERIER</a></li>
+            <li><a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="#apropos" data-fr="À propos" data-en="About">À propos</a></li>
+            <li><a href="#services" data-fr="Services" data-en="Services">Services</a></li>
+            <li><a href="#experiences" data-fr="Expériences" data-en="Experiences">Expériences</a></li>
+            <li><a href="#blog" data-fr="Blog" data-en="Blog">Blog</a></li>
+            <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+            <li><div class="languages">
+                <a href="#" id="fr-btn" class="language-option">
+                    <!-- Réalisation Drapeau Français -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29.9" height="18.4" viewBox="0 0 512 342">
+                        <g fill="none">
+                            <path fill="#F0F0F0" d="M0 .331h512v341.337H0z"/>
+                            <path fill="#0052B4" d="M0 .331h170.663v341.337H0z"/>
+                            <path fill="#D80027" d="M341.337.331H512v341.337H341.337z"/>
+                        </g>
+                    </svg>
+                    <span data-fr="Français" data-en="French">Français</span>
+                </a>
+                <a href="#" id="en-btn" class="language-option">
+                    <!--Aussi la création de Drapeau Anglais -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29.9" height="18.4" viewBox="0 0 512 342">
+                        <g fill="none">
+                            <path fill="#F0F0F0" d="M0 .331h512v341.337H0z"/>
+                            <path d="M0 42.994h512v42.663H0zm0 85.337h512v42.663H0zm0 85.326h512v42.663H0zm0 85.337h512v42.663H0z" fill="#D80027"/>
+                            <path fill="#2E52B2" d="M0 .331h256v183.797H0z"/>
+                            <path d="M99.822 75.624l-4.123 12.684H82.363l10.791 7.835-4.123 12.683 10.791-7.835 10.784 7.835-4.122-12.683 10.791-7.835h-13.337zm4.116 58.456l-4.116-12.683-4.123 12.683H82.363l10.791 7.836-4.123 12.683 10.791-7.836 10.784 7.836-4.122-12.683 10.791-7.836zm-56.361 0l-4.117-12.683-4.123 12.683H26.001l10.791 7.836-4.123 12.683 10.791-7.836 10.785 7.836-4.122-12.683 10.789-7.836zM43.46 75.624l-4.123 12.684H26.001l10.791 7.835-4.123 12.683 10.791-7.835 10.785 7.835-4.122-12.683 10.789-7.835H47.577zM99.822 29.85l-4.123 12.685H82.363l10.791 7.836-4.123 12.683 10.791-7.836 10.784 7.836-4.122-12.683 10.791-7.836h-13.337zm-56.362 0l-4.123 12.685H26.001l10.791 7.836-4.123 12.683 10.791-7.836 10.785 7.836-4.122-12.683 10.789-7.836H47.577zm112.723 45.774l-4.122 12.684h-13.336l10.79 7.835-4.121 12.683 10.789-7.835 10.786 7.835-4.123-12.683 10.791-7.835h-13.336zm4.118 58.456l-4.118-12.683-4.122 12.683h-13.336l10.79 7.836-4.121 12.683 10.789-7.836 10.786 7.836-4.123-12.683 10.791-7.836zm56.362 0l-4.117-12.683-4.123 12.683h-13.335l10.789 7.836-4.122 12.683 10.791-7.836 10.785 7.836-4.123-12.683 10.791-7.836zm-4.117-58.456l-4.123 12.684h-13.335l10.789 7.835-4.122 12.683 10.791-7.835 10.785 7.835-4.123-12.683 10.791-7.835h-13.336zM156.183 29.85l-4.122 12.685h-13.336l10.79 7.836-4.121 12.683 10.789-7.836 10.786 7.836-4.123-12.683 10.791-7.836h-13.336zm56.363 0l-4.123 12.685h-13.335l10.789 7.836-4.122 12.683 10.791-7.836 10.785 7.836-4.123-12.683 10.791-7.836h-13.336z" fill="#F0F0F0"/>
+                        </g>
+                    </svg>
+                    <span data-fr="Anglais" data-en="English">English</span>
+                </a>
+            </div></li> 
+        </ul>
+    </nav>
+</header>
+
+    
+<main>
+    <section id="accueil" class="intro">
+        <div class="intro-text">
+            <span class="hello" data-fr="BONJOUR" data-en="HELLO">BONJOUR</span>
+            <h1 data-fr="Hugo Bisserier" data-en="Hugo Bisserier">Hugo Bisserier</h1>
+            <p data-fr="Transformons les idées en réalité." data-en="Turning ideas into reality.">Transformons les idées en réalité.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:hugo.bisserier@ynov.com">hugo.bisserier@ynov.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+33782311144">07 82 31 11 44</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-fr="2 Rue de la Fourane, 13090 Aix-en-Provence, France" data-en="2 Rue de la Fourane, 13090 Aix-en-Provence, France">2 Rue de la Fourane, 13090 Aix-en-Provence, France</span></p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>     <!-- J'ai pas réelement de compte et pas forcement pertinent -->
+                <a href="#"><i class="fab fa-twitter"></i></a>      <!-- meme chose pour ici  -->
+                <a href="https://github.com/MentalOfCrow"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hugo-bisserier-1b6b161a0/?originalSubdomain=fr"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="intro-image">
+            <a href="https://www.jeancoutu.com/photo/conseils-photo/reseaux-sociaux-photo-de-profil/" target="_blank">
+                <img src="../portfolio/img/imagecv.jpg" alt="Camil Arslan Bouteba">
+            </a>
+        </div>
+    </section>
+
+    <section id="apropos" class="whoami">
+        <div class="whoami-image">
+            <img src="../portfolio/img/imagecv.jpg" alt="imagecv Hugo Bisserier">
+        </div>
+        <div class="whoami-text">
+            <h2 data-fr="À propos de moi" data-en="About Me">À propos de moi</h2>
+            <p data-fr="Depuis mon enfance, les jeux vidéo ont éveillé ma curiosité pour la technologie, me poussant à explorer et à comprendre les mécanismes qui se cachent derrière ces univers numériques fascinants. Ce parcours m'a naturellement conduit vers une carrière en programmation, où je m'efforce non seulement de coder, mais de créer des solutions qui résolvent des problèmes concrets tout en étant innovantes et sécurisées." 
+               data-en="Since childhood, video games have sparked my curiosity for technology, driving me to explore and understand the mechanisms behind these fascinating digital worlds. This journey naturally led me to a career in programming, where I strive not only to code but to create solutions that solve real problems while being innovative and secure.">
+               Depuis mon enfance, les jeux vidéo ont éveillé ma curiosité pour la technologie, me poussant à explorer et à comprendre les mécanismes qui se cachent derrière ces univers numériques fascinants. Ce parcours m'a naturellement conduit vers une carrière en programmation, où je m'efforce non seulement de coder, mais de créer des solutions qui résolvent des problèmes concrets tout en étant innovantes et sécurisées.
+            </p>
+            <p data-fr="Passionné par l'apprentissage continu, je suis toujours à la recherche de nouvelles technologies et méthodologies pour affiner mes compétences. Que ce soit dans le développement front-end, la gestion de bases de données, ou la création d'applications mobiles, je m'engage à livrer des résultats qui allient performance et sécurité." 
+               data-en="Passionate about continuous learning, I am always looking for new technologies and methodologies to refine my skills. Whether in front-end development, database management, or mobile application creation, I am committed to delivering results that combine performance and security.">
+               Passionné par l'apprentissage continu, je suis toujours à la recherche de nouvelles technologies et méthodologies pour affiner mes compétences. Que ce soit dans le développement front-end, la gestion de bases de données, ou la création d'applications mobiles, je m'engage à livrer des résultats qui allient performance et sécurité.
+            </p>
+            <p data-fr="Mon objectif est de transformer chaque défi en une opportunité d'apprentissage, tout en contribuant de manière significative aux projets sur lesquels je travaille. Voici un aperçu de mes compétences techniques :" 
+               data-en="My goal is to turn every challenge into a learning opportunity while making significant contributions to the projects I work on. Here is an overview of my technical skills:">
+               Mon objectif est de transformer chaque défi en une opportunité d'apprentissage, tout en contribuant de manière significative aux projets sur lesquels je travaille. Voici un aperçu de mes compétences techniques :
+            </p>
+            <div class="skills">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <p data-fr="Développement Front-End" data-en="Front-End Development">Développement Front-End</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <p data-fr="Développement Back-End" data-en="Back-End Development">Développement Back-End</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p data-fr="Développement d'applications mobiles" data-en="Mobile App Development">Développement d'applications mobiles</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-server"></i>
+                    <p data-fr="Gestion des bases de données" data-en="Database Management">Gestion des bases de données</p>
+                </div>
+            </div>
+            <a href="/portfolio/img/CV B1 Info.pdf" download>
+                <button data-fr="Télécharger CV" data-en="Download CV">Télécharger CV</button>
+            </a>
+        </div>
+    </section>
+        
+        
+        
+
+    <section id="services" class="services">
+        <div class="service">
+            <i class="fas fa-code fa-3x"></i>
+            <h3 data-fr="Développement Web" data-en="Web Development">Développement Web</h3>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Expériences</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li data-fr="Conception et développement de sites web responsives." data-en="Design and development of responsive websites.">Conception et développement de sites web responsives.</li>
+                <li data-fr="Intégration de systèmes de gestion de contenu (CMS) comme WordPress." data-en="Integration of content management systems (CMS) like WordPress.">Intégration de systèmes de gestion de contenu (CMS) comme WordPress.</li>
+                <li data-fr="Optimisation des performances et du référencement (SEO)." data-en="Performance optimization and SEO.">Optimisation des performances et du référencement (SEO).</li>
+                <li data-fr="Développement d'applications web front-end avec React, Vue.js." data-en="Front-end web application development with React, Vue.js.">Développement d'applications web front-end avec React, Vue.js.</li>
+                <li data-fr="Back-end avec Node.js, PHP, Python." data-en="Back-end development with Node.js, PHP, Python.">Back-end avec Node.js, PHP, Python.</li>
+                <li data-fr="Mise en place et gestion de bases de données (SQL, NoSQL)." data-en="Database setup and management (SQL, NoSQL).">Mise en place et gestion de bases de données (SQL, NoSQL).</li>
             </ul>
-            <div class="languages">
-                <a href="#">Français</a>
-                <a href="#">English</a>
+        </div>
+        <div class="service">
+            <i class="fas fa-mobile-alt fa-3x"></i>
+            <h3 data-fr="Développement Mobile" data-en="Mobile Development">Développement Mobile</h3>
+            <ul>
+                <li data-fr="Création d'applications mobiles natives pour iOS et Android." data-en="Creation of native mobile applications for iOS and Android.">Création d'applications mobiles natives pour iOS et Android.</li>
+                <li data-fr="Développement cross-platform avec Flutter et React Native." data-en="Cross-platform development with Flutter and React Native.">Développement cross-platform avec Flutter et React Native.</li>
+                <li data-fr="Optimisation des performances des applications mobiles." data-en="Optimization of mobile application performance.">Optimisation des performances des applications mobiles.</li>
+                <li data-fr="Intégration des API RESTful et GraphQL." data-en="Integration of RESTful and GraphQL APIs.">Intégration des API RESTful et GraphQL.</li>
+                <li data-fr="Tests unitaires et déploiement continu (CI/CD)." data-en="Unit testing and continuous deployment (CI/CD).">Tests unitaires et déploiement continu (CI/CD).</li>
+                <li data-fr="Publication d'applications sur les stores (App Store, Google Play)." data-en="Publishing applications on stores (App Store, Google Play).">Publication d'applications sur les stores (App Store, Google Play).</li>
+            </ul>
+        </div>
+        <div class="service">
+            <i class="fas fa-laptop-code fa-3x"></i>
+            <h3 data-fr="Développement Logiciel" data-en="Software Development">Développement Logiciel</h3>
+            <ul>
+                <li data-fr="Développement de logiciels sur mesure en C++, Java, Csharp C#." data-en="Custom software development in C++, Java, Csharp C#.">Développement de logiciels sur mesure en C++, Java, Csharp C#.</li>
+                <li data-fr="Conception d'architectures logicielles robustes et évolutives." data-en="Design of robust and scalable software architectures.">Conception d'architectures logicielles robustes et évolutives.</li>
+                <li data-fr="Automatisation de processus avec scripts et outils personnalisés." data-en="Process automation with custom scripts and tools.">Automatisation de processus avec scripts et outils personnalisés.</li>
+                <li data-fr="Intégration continue et gestion des versions (Git, GitHub, GitLab)." data-en="Continuous integration and version control (Git, GitHub, GitLab).">Intégration continue et gestion des versions (Git, GitHub, GitLab).</li>
+                <li data-fr="Tests automatisés et validation de la qualité logicielle." data-en="Automated testing and software quality assurance.">Tests automatisés et validation de la qualité logicielle.</li>
+                <li data-fr="Maintenance et amélioration continue des logiciels existants." data-en="Maintenance and continuous improvement of existing software.">Maintenance et amélioration continue des logiciels existants.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="tools" class="tools">
+        <h2 data-fr="Outils utilisés" data-en="Tools Used">Outils utilisés</h2>
+        <div class="tools-logos">
+            <div class="tool">
+                <i class="fab fa-github fa-3x" title="GitHub"></i>
+                <p data-fr="GitHub" data-en="GitHub">GitHub</p>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section class="intro">
-            <div class="intro-text">
-                <span class="hello">HELLO FRIEND</span>
-                <h1>Camil Arslan Bouteba</h1>
-                <p>From nothing, power comes forth.</p>
-                <div class="contact-info">
-                    <p><a href="mailto:Contact@Camil-Bouteba.com">Contact@Camil-Bouteba.com</a></p>
-                    <p>06 13 94 01 82</p>
-                    <p>17 Rue Bessière, 75017 Paris, France</p>
-                </div>
-                <div class="social-icons">
-                    <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="path/to/github-icon.png" alt="GitHub"></a>
-                    <a href="#"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
-                </div>
+            <div class="tool">
+                <i class="fas fa-code fa-3x" title="Visual Studio Code"></i>
+                <p data-fr="Visual Studio Code" data-en="Visual Studio Code">Visual Studio Code</p>
             </div>
-            <div class="intro-image">
-                <img src="path/to/profile-picture.jpg" alt="Camil Arslan Bouteba">
+            <div class="tool">
+                <i class="fas fa-network-wired fa-3x" title="Cisco Packet Tracer"></i>
+                <p data-fr="Cisco Packet Tracer" data-en="Cisco Packet Tracer">Cisco Packet Tracer</p>
             </div>
-        </section>
+            <div class="tool">
+                <i class="fas fa-sync fa-3x" title="Looping.exe"></i>
+                <p data-fr="Looping.exe" data-en="Looping.exe">Looping.exe</p>
+            </div>
+            <div class="tool">
+                <i class="fas fa-box fa-3x" title="Oracle VM VirtualBox"></i>
+                <p data-fr="Oracle VM VirtualBox" data-en="Oracle VM VirtualBox">Oracle VM VirtualBox</p>
+            </div>
+            <div class="tool">
+                <i class="fas fa-paper-plane fa-3x" title="PostMan"></i>
+                <p data-fr="PostMan" data-en="PostMan">PostMan</p>
+            </div>
+        </div>
+    </section>
+      
+        
+    
+    <section id="projects" class="projects">
+        <h2 data-fr="Mes Projets" data-en="My Projects">Mes Projets</h2>
+        
+        <div class="project">
+            <i class="fas fa-gamepad"></i>
+            <div class="project-details">
+                <h3 data-fr="Projet Red" data-en="Project Red">Projet Red</h3>
+                <p data-fr="Le Projet Red, réalisé en septembre 2023, a été un moment clé de mon apprentissage en développement. Il s'agissait de mon tout premier projet, conçu pour m'initier à la programmation. Ce projet consistait à créer un jeu vidéo en ligne de commande sous Visual Studio Code, en utilisant le langage Golang." 
+                    data-en="Project Red, completed in September 2023, was a key moment in my development learning journey. It was my very first project, designed to introduce me to programming. This project involved creating a command-line video game in Visual Studio Code, using the Go language.">
+                    Le Projet Red, réalisé en septembre 2023, a été un moment clé de mon apprentissage en développement. Il s'agissait de mon tout premier projet, conçu pour m'initier à la programmation. Ce projet consistait à créer un jeu vidéo en ligne de commande sous Visual Studio Code, en utilisant le langage Golang.
+                </p>
+                <p data-fr="Ce projet m'a permis de comprendre les bases de la programmation procédurale, telles que la gestion des boucles, des conditions, et des variables. C'était un défi stimulant qui m'a aidé à renforcer mes compétences en logique et en structure de code, me préparant ainsi pour des projets plus complexes à venir."
+                    data-en="This project allowed me to understand the basics of procedural programming, such as loop management, conditions, and variables. It was a stimulating challenge that helped strengthen my skills in logic and code structure, preparing me for more complex projects to come.">
+                    Ce projet m'a permis de comprendre les bases de la programmation procédurale, telles que la gestion des boucles, des conditions, et des variables. C'était un défi stimulant qui m'a aidé à renforcer mes compétences en logique et en structure de code, me préparant ainsi pour des projets plus complexes à venir.
+                </p>
+            </div>
+        </div>
+        
+        <div class="project">
+            <i class="fas fa-blog"></i>
+            <div class="project-details">
+                <h3 data-fr="Création d'un Blog" data-en="Creating a Blog">Création d'un Blog</h3>
+                <p data-fr="Le projet de création d'un blog, réalisé vers la fin de ma formation, a été l'un des projets les plus complexes que j'ai entrepris. Ce projet nécessitait de mobiliser toutes les compétences acquises tout au long de l'année. L'objectif était de développer un site web complet, de A à Z, qui fonctionne comme un véritable blog."
+                    data-en="The blog creation project, completed towards the end of my training, was one of the most complex projects I undertook. This project required mobilizing all the skills acquired throughout the year. The goal was to develop a complete website, from A to Z, that functions as a true blog.">
+                    Le projet de création d'un blog, réalisé vers la fin de ma formation, a été l'un des projets les plus complexes que j'ai entrepris. Ce projet nécessitait de mobiliser toutes les compétences acquises tout au long de l'année. L'objectif était de développer un site web complet, de A à Z, qui fonctionne comme un véritable blog.
+                </p>
+                <p data-fr="J'ai utilisé HTML, CSS, et JavaScript pour le développement front-end, et MySQL pour la gestion de la base de données. Le projet incluait la création d'un système de publication d'articles, de gestion des utilisateurs, et de modération des commentaires. Ce projet m'a permis de maîtriser l'intégration des technologies web tout en assurant une expérience utilisateur fluide et sécurisée."
+                    data-en="I used HTML, CSS, and JavaScript for front-end development, and MySQL for database management. The project included creating an article publication system, user management, and comment moderation. This project allowed me to master the integration of web technologies while ensuring a smooth and secure user experience.">
+                    J'ai utilisé HTML, CSS, et JavaScript pour le développement front-end, et MySQL pour la gestion de la base de données. Le projet incluait la création d'un système de publication d'articles, de gestion des utilisateurs, et de modération des commentaires. Ce projet m'a permis de maîtriser l'intégration des technologies web tout en assurant une expérience utilisateur fluide et sécurisée.
+                </p>
+            </div>
+        </div>
+        
+        <div class="project">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="project-details">
+                <h3 data-fr="Boutique en ligne" data-en="Online Store">Boutique en ligne</h3>
+                <p data-fr="La création d'une boutique en ligne a été l'un des derniers projets de ma formation, et aussi l'un des plus exigeants. Ce projet avait pour but de développer un site e-commerce complet, capable de gérer des produits, des utilisateurs, et des commandes, tout en assurant une sécurité optimale des transactions."
+                    data-en="Creating an online store was one of the last projects of my training, and also one of the most demanding. This project aimed to develop a complete e-commerce site, capable of managing products, users, and orders, while ensuring optimal security of transactions.">
+                    La création d'une boutique en ligne a été l'un des derniers projets de ma formation, et aussi l'un des plus exigeants. Ce projet avait pour but de développer un site e-commerce complet, capable de gérer des produits, des utilisateurs, et des commandes, tout en assurant une sécurité optimale des transactions.
+                </p>
+                <p data-fr="Pour ce projet, j'ai utilisé une combinaison de technologies, notamment HTML, CSS, JavaScript pour le front-end, ainsi que MySQL pour la base de données. Ce projet a été un véritable défi, car il demandait une gestion rigoureuse des fonctionnalités avancées telles que l'intégration de passerelles de paiement, la gestion des stocks en temps réel, et l'optimisation des performances pour offrir une expérience utilisateur de haute qualité."
+                    data-en="For this project, I used a combination of technologies, including HTML, CSS, JavaScript for the front-end, as well as MySQL for the database. This project was a real challenge, as it required rigorous management of advanced features such as payment gateway integration, real-time stock management, and performance optimization to provide a high-quality user experience.">
+                    Pour ce projet, j'ai utilisé une combinaison de technologies, notamment HTML, CSS, JavaScript pour le front-end, ainsi que MySQL pour la base de données. Ce projet a été un véritable défi, car il demandait une gestion rigoureuse des fonctionnalités avancées telles que l'intégration de passerelles de paiement, la gestion des stocks en temps réel, et l'optimisation des performances pour offrir une expérience utilisateur de haute qualité.
+                </p>
+                <p data-fr="Ce projet m'a permis de mettre en pratique l'ensemble de mes compétences en développement web et en gestion de bases de données, tout en renforçant ma capacité à gérer des projets complexes de bout en bout."
+                    data-en="This project allowed me to apply all of my skills in web development and database management, while enhancing my ability to manage complex projects from start to finish.">
+                    Ce projet m'a permis de mettre en pratique l'ensemble de mes compétences en développement web et en gestion de bases de données, tout en renforçant ma capacité à gérer des projets complexes de bout en bout.
+                </p>
+            </div>
+        </div>
+    </section>
+          
+    <section id="future-projects" class="future-projects">
+        <h2 data-fr="Projets futurs et objectifs" data-en="Future Projects and Goals">Projets futurs et objectifs</h2>
+        <p data-fr="La programmation a toujours été une véritable passion pour moi. Depuis mes débuts, j'ai été fasciné par la capacité à transformer des idées en réalité à travers le code. J'apprécie particulièrement le processus de résolution de problèmes complexes et la satisfaction de voir un projet se concrétiser. Cependant, au fur et à mesure que j'avance dans ma formation, je ressens de plus en plus le besoin de me spécialiser et d'approfondir mes connaissances dans un domaine spécifique."
+           data-en="Programming has always been a true passion of mine. From the very beginning, I have been fascinated by the ability to turn ideas into reality through code. I particularly enjoy the process of solving complex problems and the satisfaction of seeing a project come to life. However, as I progress in my studies, I increasingly feel the need to specialize and deepen my knowledge in a specific field.">
+           La programmation a toujours été une véritable passion pour moi. Depuis mes débuts, j'ai été fasciné par la capacité à transformer des idées en réalité à travers le code. J'apprécie particulièrement le processus de résolution de problèmes complexes et la satisfaction de voir un projet se concrétiser. Cependant, au fur et à mesure que j'avance dans ma formation, je ressens de plus en plus le besoin de me spécialiser et d'approfondir mes connaissances dans un domaine spécifique.
+        </p>
+        <p data-fr="À partir de ma troisième année d'études, je vais orienter ma formation vers la cybersécurité. Ce domaine m'attire particulièrement car il combine mes compétences en programmation avec un défi constant : protéger les données et les systèmes contre des menaces toujours plus sophistiquées. La cybersécurité est un secteur en constante évolution, où la vigilance et l'innovation sont primordiales. Mon objectif est de devenir un expert en protection des données, en mettant l'accent sur les solutions de sécurité adaptées aux entreprises de taille moyenne."
+           data-en="Starting from my third year of studies, I will be focusing my training on cybersecurity. This field particularly attracts me because it combines my programming skills with a constant challenge: protecting data and systems against increasingly sophisticated threats. Cybersecurity is a constantly evolving sector where vigilance and innovation are paramount. My goal is to become an expert in data protection, with a focus on security solutions tailored to medium-sized businesses.">
+           À partir de ma troisième année d'études, je vais orienter ma formation vers la cybersécurité. Ce domaine m'attire particulièrement car il combine mes compétences en programmation avec un défi constant : protéger les données et les systèmes contre des menaces toujours plus sophistiquées. La cybersécurité est un secteur en constante évolution, où la vigilance et l'innovation sont primordiales. Mon objectif est de devenir un expert en protection des données, en mettant l'accent sur les solutions de sécurité adaptées aux entreprises de taille moyenne.
+        </p>
+        <p data-fr="Dans cette perspective, je prévois de m'engager dans plusieurs projets de cybersécurité au cours des prochaines années. Ces projets incluront la participation à des hackathons spécialisés en sécurité informatique, le développement de logiciels de protection de données, et l'exploration des technologies de cryptographie avancée. Je m'efforcerai également de rester à jour avec les dernières tendances et menaces dans le domaine, en suivant une veille technologique rigoureuse."
+           data-en="With this in mind, I plan to engage in several cybersecurity projects over the coming years. These projects will include participating in hackathons focused on information security, developing data protection software, and exploring advanced cryptography technologies. I will also strive to stay updated with the latest trends and threats in the field by maintaining a rigorous technological watch.">
+           Dans cette perspective, je prévois de m'engager dans plusieurs projets de cybersécurité au cours des prochaines années. Ces projets incluront la participation à des hackathons spécialisés en sécurité informatique, le développement de logiciels de protection de données, et l'exploration des technologies de cryptographie avancée. Je m'efforcerai également de rester à jour avec les dernières tendances et menaces dans le domaine, en suivant une veille technologique rigoureuse.
+        </p>
+        <p data-fr="En fin de compte, mon ambition est de combiner mon expertise en programmation avec une spécialisation pointue en cybersécurité, afin de contribuer à la protection des données sensibles et à la sécurité des infrastructures numériques. Je suis convaincu que cette double compétence me permettra de jouer un rôle clé dans le renforcement de la sécurité des entreprises face aux cybermenaces."
+           data-en="Ultimately, my ambition is to combine my programming expertise with a deep specialization in cybersecurity, to contribute to the protection of sensitive data and the security of digital infrastructures. I am convinced that this dual expertise will enable me to play a key role in strengthening business security against cyber threats.">
+           En fin de compte, mon ambition est de combiner mon expertise en programmation avec une spécialisation pointue en cybersécurité, afin de contribuer à la protection des données sensibles et à la sécurité des infrastructures numériques. Je suis convaincu que cette double compétence me permettra de jouer un rôle clé dans le renforcement de la sécurité des entreprises face aux cybermenaces.
+        </p>
+    </section>
+    
 
-        <section class="whoami">
-            <div class="whoami-image">
-                <img src="path/to/whoami-image.jpg" alt="Camil Arslan Bouteba at a conference">
-            </div>
-            <div class="whoami-text">
-                <h2>whoami</h2>
-                <p>De ma fascination pour les jeux vidéo à la maîtrise des lignes de code, ma passion pour la technologie m'a conduit vers une carrière où je protège désormais les données numériques. Je suis également compétent en :</p>
-                <div class="skills">
-                    <div class="skill">
-                        <img src="path/to/dev-icon.png" alt="Dev Apps & Web security">
-                        <p>Dev Apps & Web security</p>
-                    </div>
-                    <div class="skill">
-                        <img src="path/to/governance-icon.png" alt="Gouvernance & Risk Management">
-                        <p>Gouvernance & Risk Management</p>
-                    </div>
-                    <div class="skill">
-                        <img src="path/to/compliance-icon.png" alt="Conformité et réglementation">
-                        <p>Conformité et réglementation</p>
-                    </div>
-                    <div class="skill">
-                        <img src="path/to/audit-icon.png" alt="Audit de vulnérabilités & Pentest">
-                        <p>Audit de vulnérabilités & Pentest</p>
-                    </div>
-                </div>
-                <button>Télécharger CV</button>
-            </div>
-        </section>
 
-        <section class="services">
-            <div class="service">
-                <img src="path/to/penetration-test-icon.png" alt="Penetration test">
-                <h3>Penetration test</h3>
-                <ul>
-                    <li>Penetration testing on external, internal and wireless networks.</li>
-                    <li>Security testing of web and mobile applications.</li>
-                    <li>Network security architecture reviews.</li>
-                    <li>Code review.</li>
-                    <li>Vulnerability remediation.</li>
-                    <li>Writing documentation (POC, etc.).</li>
-                </ul>
-            </div>
-            <div class="service">
-                <img src="path/to/governance-icon.png" alt="Governance, Risk and Compliance">
-                <h3>Governance, Risk and Compliance</h3>
-                <ul>
-                    <li>Implementation of an information security management system (iso-27001).</li>
-                    <li>Development and implementation of cybersecurity policies.</li>
-                    <li>Identification of potential threats and assessment of cybersecurity risks (Ebios RM).</li>
-                </ul>
-            </div>
-            <div class="service">
-                <img src="path/to/consultation-icon.png" alt="Cybersecurity Consultation">
-                <h3>Cybersecurity Consultation</h3>
-                <ul>
-                    <li>Assistance to the MOA for the drafting of Authorization matrices (IAM).</li>
-                    <li>MOA assistance in the selection/choice of project solutions.</li>
-                    <li>Assurance that the company is in compliance with cybersecurity and data protection regulations (GDPR, ISO-27001).</li>
-                    <li>Definition of security requirements.</li>
-                </ul>
-            </div>
-        </section>
 
-        <section class="tools">
-            <h2>Used tools</h2>
-            <div class="tools-logos">
-                <img src="path/to/tool1.png" alt="NMAP">
-                <img src="path/to/tool2.png" alt="Burp Suite">
-                <img src="path/to/tool3.png" alt="Nessus">
-                <img src="path/to/tool4.png" alt="Metasploit">
-                <img src="path/to/tool5.png" alt="ISO 27001">
-                <img src="path/to/tool6.png" alt="DRATA">
-                <!-- Ajoutez plus d'images d'outils si nécessaire -->
-            </div>
-        </section>
 
-        <section class="projects">
-            <h2>My Projects</h2>
-            <div class="project">
-                <img src="path/to/project1.png" alt="Project 1">
-                <div class="project-details">
-                    <h3>E-mail Tracking Application</h3>
-                    <p>Design & Development (in progress)</p>
-                    <p>Description du projet...</p>
-                </div>
-            </div>
-            <!-- Ajoutez plus de projets si nécessaire -->
-        </section>
 
-        <section class="skills">
-            <h2>Technical Skills</h2>
-            <div class="skill-set">
-                <div class="skill">
-                    <h3>Penetration Testing</h3>
-                    <p>...</p>
-                </div>
-                <div class="skill">
-                    <h3>Web Application Security</h3>
-                    <p>...</p>
-                </div>
-                <!-- Ajoutez plus de compétences si nécessaire -->
-            </div>
-        </section>
 
-        <section class="character">
-            <h2>Character</h2>
-            <div class="character-traits">
-                <div class="trait">
-                    <h3>Curious</h3>
-                    <p>...</p>
-                </div>
-                <div class="trait">
-                    <h3>Creative</h3>
-                    <p>...</p>
-                </div>
-                <!-- Ajoutez plus de traits de caractère si nécessaire -->
-            </div>
-        </section>
 
-        <section class="experience">
-            <div class="academic-background">
-                <h2>Academic background</h2>
-                <div class="entry">
-                    <h3>Certification & Training in Cloud Associate & Junior Penetration Tester</h3>
-                    <p>...</p>
-                </div>
-                <div class="entry">
-                    <h3>Certification & Training in ISO-27001 Foundation & Lead Auditor</h3>
-                    <p>...</p>
-                </div>
-                <div class="entry">
-                    <h3>Master's in Reliability and Computer Security</h3>
-                    <p>Aix-Marseille University</p>
-                    <p>...</p>
-                </div>
-                <div class="entry">
-                    <h3>Bachelor's Degree in Computer Science</h3>
-                    <p>Aix-Marseille University</p>
-                    <p>...</p>
-                </div>
+    <section id="skills" class="skills">
+        <h2 data-fr="Compétences Techniques" data-en="Technical Skills">Compétences Techniques</h2>
+        <div class="skill-set">
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <h3 data-fr="Développement Front-End" data-en="Front-End Development">Développement Front-End</h3>
+                <p data-fr="HTML, CSS, JavaScript" data-en="HTML, CSS, JavaScript">HTML, CSS, JavaScript</p>
             </div>
-            <div class="professional-experience">
-                <h2>Professional experience</h2>
-                <div class="entry">
-                    <h3>Governance, Risk Management & Compliance Consultant & Intrusion Tester</h3>
-                    <p>Freelance</p>
-                    <p>...</p>
-                </div>
-                <div class="entry">
-                    <h3>Expert Member in Ebios Risk Manager</h3>
-                    <p>Ebios Risk Manager Club</p>
-                    <p>...</p>
-                </div>
-                <div class="entry">
-                    <h3>Support for Chief Information Security Officer (CISO)</h3>
-                    <p>Webhelp Group & Concentrix</p>
-                    <p>...</p>
-                </div>
-                <div class="entry">
-                    <h3>Cybersecurity Consultant</h3>
-                    <p>Internship – Aix-Marseille University</p>
-                    <p>...</p>
-                </div>
-                <div class="entry">
-                    <h3>Full-Stack Web Development (Laravel & Symfony)</h3>
-                    <p>Internship – Bureau de Certification Internationale Finance (BCIFRANCE)</p>
-                    <p>...</p>
-                </div>
-                <div class="entry">
-                    <h3>Full-Stack Web Development (PHP, Symfony, MySQL, HTML/CSS, JavaScript)</h3>
-                    <p>...</p>
-                </div>
+            <div class="skill">
+                <i class="fas fa-server"></i>
+                <h3 data-fr="Développement Back-End" data-en="Back-End Development">Développement Back-End</h3>
+                <p data-fr="PHP, Node.js, C#, Java, Golang" data-en="PHP, Node.js, C#, Java, Golang">PHP, Node.js, C#, Java, Golang</p>
             </div>
-        </section>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <h3 data-fr="Gestion de Base de Données" data-en="Database Management">Gestion de Base de Données</h3>
+                <p data-fr="MySQL" data-en="MySQL">MySQL</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-tools"></i>
+                <h3 data-fr="Outils de Développement" data-en="Development Tools">Outils de Développement</h3>
+                <p data-fr="Postman, Looping, Git, VS Code" data-en="Postman, Looping, Git, VS Code">Postman, Looping, Git, VS Code</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="character" class="character">
+        <h2 data-fr="Caractère" data-en="Character">Caractère</h2>
+        <div class="character-traits">
+            <div class="trait">
+                <i class="fas fa-lightbulb"></i>
+                <h3 data-fr="Curieux" data-en="Curious">Curieux</h3>
+                <p data-fr="J'aime découvrir de nouvelles technologies et approfondir mes connaissances constamment." data-en="I love discovering new technologies and constantly deepening my knowledge.">J'aime découvrir de nouvelles technologies et approfondir mes connaissances constamment.</p>
+            </div>
+            <div class="trait">
+                <i class="fas fa-paint-brush"></i>
+                <h3 data-fr="Créatif" data-en="Creative">Créatif</h3>
+                <p data-fr="Je trouve des solutions innovantes aux défis, en cherchant toujours à innover dans mes projets." data-en="I find innovative solutions to challenges, always seeking to innovate in my projects.">Je trouve des solutions innovantes aux défis, en cherchant toujours à innover dans mes projets.</p>
+            </div>
+            <div class="trait">
+                <i class="fas fa-users"></i>
+                <h3 data-fr="Travail d'équipe" data-en="Teamwork">Travail d'équipe</h3>
+                <p data-fr="Collaborer avec d'autres est essentiel pour réussir des projets ambitieux et atteindre des objectifs communs." data-en="Collaborating with others is essential to successfully completing ambitious projects and achieving common goals.">Collaborer avec d'autres est essentiel pour réussir des projets ambitieux et atteindre des objectifs communs.</p>
+            </div>
+        </div>
+    </section>
+    
+        
 
-        <section class="certifications">
-            <h2>Certifications</h2>
-            <div class="certification">
-                <img src="path/to/certification1.png" alt="Certification 1">
-                <img src="path/to/certification2.png" alt="Certification 2">
-                <img src="path/to/certification3.png" alt="Certification 3">
-                <!-- Ajoutez plus de certifications si nécessaire -->
+    <section id="experiences" class="experience">
+        <div class="academic-background">
+            <h2 data-fr="Formation académique" data-en="Academic Background">Formation académique</h2>
+            <div class="entry">
+                <h3 data-fr="Brevet des Collèges" data-en="Middle School Diploma">Brevet des Collèges</h3>
+                <p data-fr="Obtenu avec mention Assez Bien, ce diplôme marque l'accomplissement de l'éducation secondaire avant l'entrée au lycée." data-en="Obtained with honors, this diploma marks the completion of secondary education before entering high school.">Obtenu avec mention Assez Bien, ce diplôme marque l'accomplissement de l'éducation secondaire avant l'entrée au lycée.</p>
             </div>
-        </section>
-
-        <section class="appointment">
-            <h2>Online appointment</h2>
-            <p>Take an appointment with me for free in just 1 click!</p>
-            <p>Do you have a project, a specific need, or a question? Don’t hesitate to contact me!</p>
-            <p>We will talk for 30 minutes about your project.</p>
-            <p><strong>Personalized interview</strong></p>
-            <div class="availability">
-                <img src="path/to/profile-picture.jpg" alt="Camil">
-                <button>Schedule an appointment</button>
+            <div class="entry">
+                <h3 data-fr="Baccalauréat Technologique" data-en="Technological Baccalaureate">Baccalauréat Technologique</h3>
+                <p data-fr="Obtenu avec mention en 2023, dans la filière technologique au Lycée Charles-Augustin de Coulomb à Angoulême. Cet examen a marqué la transition vers des études supérieures spécialisées." data-en="Obtained with honors in 2023, in the technological stream at Lycée Charles-Augustin de Coulomb in Angoulême. This exam marked the transition to specialized higher education.">Obtenu avec mention en 2023, dans la filière technologique au Lycée Charles-Augustin de Coulomb à Angoulême. Cet examen a marqué la transition vers des études supérieures spécialisées.</p>
             </div>
-        </section>
-
-        <section class="blogs">
-            <h2>My Blogs</h2>
-            <div class="blog-entry">
-                <h3>06 Jan 2023</h3>
-                <p>The future of blockchain</p>
-                <a href="#">Read more</a>
+            <div class="entry">
+                <h3 data-fr="Ynov Aix-en-Provence" data-en="Ynov Aix-en-Provence">Ynov Aix-en-Provence</h3>
+                <p data-fr="Actuellement en cours de formation en informatique, avec une spécialisation en cybersécurité dès la 3ème année. Objectif final : obtenir un Master en 5 ans, incluant 3 années de spécialisation en cybersécurité." data-en="Currently in training in computer science, with a specialization in cybersecurity starting in the third year. Final objective: obtain a Master's degree in 5 years, including 3 years of specialization in cybersecurity.">Actuellement en cours de formation en informatique, avec une spécialisation en cybersécurité dès la 3ème année. Objectif final : obtenir un Master en 5 ans, incluant 3 années de spécialisation en cybersécurité.</p>
             </div>
-            <div class="blog-entry">
-                <h3>03 Feb 2023</h3>
-                <p>All you need to know about the IoT</p>
-                <a href="#">Read more</a>
+            <div class="entry">
+                <h3 data-fr="Formation 7shapes" data-en="7shapes Training">Formation 7shapes</h3>
+                <p data-fr="Formation 7shapes : J'ai étudié le fonctionnement d'une startup pendant une semaine, en me familiarisant avec l'innovation, les processus agiles et le Lean Management pour optimiser la gestion et la performance des équipes." data-en="7shapes Training: I studied the workings of a startup for a week, familiarizing myself with innovation, agile processes, and Lean Management to optimize team management and performance.">Formation 7shapes : J'ai étudié le fonctionnement d'une startup pendant une semaine, en me familiarisant avec l'innovation, les processus agiles et le Lean Management pour optimiser la gestion et la performance des équipes.</p>
             </div>
-            <div class="blog-entry">
-                <h3>07 Mar 2023</h3>
-                <p>Consider the biased consent of internet users</p>
-                <a href="#">Read more</a>
+        </div>
+        <div class="professional-experience">
+            <h2 data-fr="Expérience professionnelle" data-en="Professional Experience">Expérience professionnelle</h2>
+            <div class="entry">
+                <h3 data-fr="Assistant Maître d'Œuvre" data-en="Assistant Project Manager">Assistant Maître d'Œuvre</h3>
+                <p data-fr="Entreprise MEB" data-en="MEB Company">Entreprise MEB</p>
+                <p data-fr="Suivi d'opération de construction de logements, pilotage, et participation aux opérations de réception." data-en="Supervision of housing construction operations, project management, and participation in handover operations.">Suivi d'opération de construction de logements, pilotage, et participation aux opérations de réception.</p>
+                <p data-fr="Cette expérience m'a permis d'acquérir des compétences en organisation et gestion de projets, bien que ce ne soit pas mon domaine de prédilection." data-en="This experience allowed me to acquire skills in organization and project management, although it is not my main field of interest.">Cette expérience m'a permis d'acquérir des compétences en organisation et gestion de projets, bien que ce ne soit pas mon domaine de prédilection.</p>
             </div>
-        </section>
-
-        <section class="contact">
-            <h2>Let's join forces for excellence in cybersecurity.</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Full name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="phone">Mobile</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send the message</button>
-            </form>
-        </section>
+            <div class="entry">
+                <h3 data-fr="Traduction en ligne" data-en="Online Translation">Traduction en ligne</h3>
+                <p data-fr="Freelance, 2022/2023" data-en="Freelance, 2022/2023">Freelance, 2022/2023</p>
+                <p data-fr="Travail de traduction de documents pour des clients internationaux, renforçant mes compétences linguistiques et de communication." data-en="Translation work for international clients, strengthening my language and communication skills.">Travail de traduction de documents pour des clients internationaux, renforçant mes compétences linguistiques et de communication.</p>
+            </div>
+            <div class="entry">
+                <h3 data-fr="Expériences diverses" data-en="Various Experiences">Expériences diverses</h3>
+                <p data-fr="J'ai également travaillé dans des magasins et d'autres petits boulots pendant mon temps libre, ce qui m'a permis de développer un sens du service client et de l'adaptabilité." data-en="I have also worked in stores and other small jobs in my free time, which has allowed me to develop a sense of customer service and adaptability.">J'ai également travaillé dans des magasins et d'autres petits boulots pendant mon temps libre, ce qui m'a permis de développer un sens du service client et de l'adaptabilité.</p>
+            </div>
+            <div class="entry">
+                <h3 data-fr="Employé chez MEG" data-en="Employee at MEG">Employé chez MEG</h3>
+                <p data-fr="Entreprise MEG" data-en="MEG Company">Entreprise MEG</p>
+                <p data-fr="Participation à diverses tâches administratives et opérationnelles, développant ainsi des compétences en gestion et organisation." data-en="Participation in various administrative and operational tasks, thus developing management and organizational skills.">Participation à diverses tâches administratives et opérationnelles, développant ainsi des compétences en gestion et organisation.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="certifications" class="certifications">
+        <h2 data-fr="Certifications" data-en="Certifications">Certifications</h2>
+        <div class="certification">
+            <div class="cert-item">
+                <i class="fas fa-graduation-cap"></i> <!-- Icône pour le Brevet -->
+                <h3 data-fr="Brevet des Collèges" data-en="Middle School Diploma">Brevet des Collèges</h3>
+                <p data-fr="Obtenu en 2020, le Brevet des Collèges marque l'accomplissement de l'éducation secondaire avant l'entrée au lycée." data-en="Obtained in 2020, the Middle School Diploma marks the completion of secondary education before entering high school.">Obtenu en 2020, le Brevet des Collèges marque l'accomplissement de l'éducation secondaire avant l'entrée au lycée.</p>
+            </div>
+            <div class="cert-item">
+                <i class="fas fa-school"></i> <!-- Icône pour le Bac -->
+                <h3 data-fr="Baccalauréat" data-en="Baccalaureate">Baccalauréat</h3>
+                <p data-fr="Obtenu en , le Baccalauréat assez bien, dans la filière [nom de la filière], préparant à l'entrée dans l'enseignement supérieur." data-en="Obtained in , the Baccalaureate with honors, in the [stream name], preparing for entry into higher education.">Obtenu en , le Baccalauréat assez bien, dans la filière [nom de la filière], préparant à l'entrée dans l'enseignement supérieur.</p>
+            </div>
+            <div class="cert-item">
+                <i class="fas fa-laptop-code"></i> <!-- Icône pour la Programmation -->
+                <i class="fas fa-shield-alt"></i>  <!-- Icône pour la Cybersécurité -->
+                <h3 data-fr="En cours de formation" data-en="In Training">En cours de formation</h3>
+                <p data-fr="Actuellement en formation dans la programmation et la cybersécurité à Ynov Aix en Provence, renforçant mes compétences en technologies modernes." data-en="Currently training in programming and cybersecurity at Ynov Aix en Provence, strengthening my skills in modern technologies.">Actuellement en formation dans la programmation et la cybersécurité à Ynov Aix en Provence, renforçant mes compétences en technologies modernes.</p>
+            </div>
+        </div>
+    </section>
+    
+        
+        
+    <section id="appointment" class="appointment">
+        <h2 data-fr="Prendre un rendez-vous en ligne" data-en="Book an Online Appointment">Prendre un rendez-vous en ligne</h2>
+        <p data-fr="Prendre rendez-vous avec moi gratuitement en un clic !" data-en="Book an appointment with me for free in just one click!">Prendre rendez-vous avec moi gratuitement en un clic !</p>
+        <p data-fr="Vous avez un projet, un besoin spécifique, ou une question ? N'hésitez pas à me contacter par mail !" data-en="Do you have a project, a specific need, or a question? Feel free to contact me by email!">Vous avez un projet, un besoin spécifique, ou une question ? N'hésitez pas à me contacter par mail !</p>
+        <p data-fr="Nous discuterons ensuite de nos projets communs et des opportunités que cette collaboration pourrait nous apporter mutuellement." data-en="We will then discuss our shared projects and the opportunities that our collaboration could bring us.">Nous discuterons ensuite de nos projets communs et des opportunités que cette collaboration pourrait nous apporter mutuellement.</p>
+        <p><strong><i class="fas fa-handshake"></i> <span data-fr="Entretien personnalisé" data-en="Personalized Interview">Entretien personnalisé</span></strong></p>
+        <div class="availability">
+            <i class="fas fa-calendar-check fa-4x"></i>
+            <a href="mailto:@Camil-Bouteba.com?subject=Demande%20de%20rendez-vous&body=Bonjour%20Camil,%0D%0A%0D%0AJe%20souhaite%20planifier%20un%20rendez-vous%20avec%20vous%20pour%20discuter%20de%20..." target="_blank">
+                <button data-fr="Planifier un rendez-vous" data-en="Schedule an Appointment">Planifier un rendez-vous</button>
+            </a>
+        </div>
+    </section>
+    
+    <section id="blog" class="blogs">
+        <h2 data-fr="Mes Blogs" data-en="My Blogs">Mes Blogs</h2>
+        
+        <div class="blog-entry">
+            <h3 data-fr="Septembre 2023 : Projet Red avec Golang" data-en="September 2023: Project Red with Golang">Septembre 2023 : Projet Red avec Golang</h3>
+            <p data-fr="Mon parcours en développement a débuté avec le Projet Red en septembre 2023. Ce projet consistait à développer un jeu en ligne de commande en utilisant le langage Golang. C'était un défi stimulant qui m'a permis de me familiariser avec ce langage tout en créant un projet concret." 
+               data-en="My journey in development began with Project Red in September 2023. This project involved creating a command-line game using the Golang language. It was a stimulating challenge that allowed me to become familiar with this language while creating a concrete project.">
+               Mon parcours en développement a débuté avec le Projet Red en septembre 2023. Ce projet consistait à développer un jeu en ligne de commande en utilisant le langage Golang. C'était un défi stimulant qui m'a permis de me familiariser avec ce langage tout en créant un projet concret.
+            </p>
+        </div>
+    
+        <div class="blog-entry">
+            <h3 data-fr="Octobre - Novembre 2023 : HTML et CSS - Structuration de Pages Web" data-en="October - November 2023: HTML and CSS - Structuring Web Pages">Octobre - Novembre 2023 : HTML et CSS - Structuration de Pages Web</h3>
+            <p data-fr="Après le Projet Red, j'ai continué avec l'apprentissage de HTML et CSS. Durant cette période, j'ai appris à créer et à styliser des pages web, en commençant par des projets simples pour ensuite réaliser une aventure interactive en utilisant uniquement HTML et CSS." 
+               data-en="After Project Red, I continued with learning HTML and CSS. During this period, I learned to create and style web pages, starting with simple projects and then creating an interactive adventure using only HTML and CSS.">
+               Après le Projet Red, j'ai continué avec l'apprentissage de HTML et CSS. Durant cette période, j'ai appris à créer et à styliser des pages web, en commençant par des projets simples pour ensuite réaliser une aventure interactive en utilisant uniquement HTML et CSS.
+            </p>
+        </div>
+    
+        <div class="blog-entry">
+            <h3 data-fr="Décembre 2023 - Janvier 2024 : Introduction à la Programmation Orientée Objet avec C#" data-en="December 2023 - January 2024: Introduction to Object-Oriented Programming with C#">Décembre 2023 - Janvier 2024 : Introduction à la Programmation Orientée Objet avec C#</h3>
+            <p data-fr="Pendant cette période, j'ai commencé à explorer la Programmation Orientée Objet avec C#. Cette formation a été cruciale pour comprendre la structuration du code de manière modulaire et réutilisable, en travaillant sur des projets comme la gestion d'une bibliothèque et d'autres applications." 
+               data-en="During this period, I began exploring Object-Oriented Programming with C#. This training was crucial for understanding the structuring of code in a modular and reusable manner, working on projects like managing a library and other applications.">
+               Pendant cette période, j'ai commencé à explorer la Programmation Orientée Objet avec C#. Cette formation a été cruciale pour comprendre la structuration du code de manière modulaire et réutilisable, en travaillant sur des projets comme la gestion d'une bibliothèque et d'autres applications.
+            </p>
+        </div>
+    
+        <div class="blog-entry">
+            <h3 data-fr="Mars - Avril 2024 : Java, JavaScript et MySQL" data-en="March - April 2024: Java, JavaScript, and MySQL">Mars - Avril 2024 : Java, JavaScript et MySQL</h3>
+            <p data-fr="En mars et avril, j'ai approfondi mes compétences en Java, JavaScript et MySQL. Cette phase m'a permis de travailler sur des projets impliquant la création de bases de données robustes et le développement d'interfaces dynamiques pour le web." 
+               data-en="In March and April, I deepened my skills in Java, JavaScript, and MySQL. This phase allowed me to work on projects involving the creation of robust databases and the development of dynamic web interfaces.">
+               En mars et avril, j'ai approfondi mes compétences en Java, JavaScript et MySQL. Cette phase m'a permis de travailler sur des projets impliquant la création de bases de données robustes et le développement d'interfaces dynamiques pour le web.
+            </p>
+        </div>
+    
+        <div class="blog-entry">
+            <h3 data-fr="Mai - Juin 2024 : Projets de Fin d'Année" data-en="May - June 2024: End-of-Year Projects">Mai - Juin 2024 : Projets de Fin d'Année</h3>
+            <p data-fr="À l'approche de la fin de l'année, j'ai participé à deux grands projets : la création d'une boutique en ligne et le développement d'un blog. Ces projets ont été l'occasion d'appliquer toutes les compétences acquises tout au long de l'année dans un contexte de groupe, nécessitant une communication efficace et une gestion rigoureuse des tâches." 
+               data-en="As the end of the year approached, I participated in two major projects: the creation of an online store and the development of a blog. These projects were an opportunity to apply all the skills acquired throughout the year in a group context, requiring effective communication and rigorous task management.">
+               À l'approche de la fin de l'année, j'ai participé à deux grands projets : la création d'une boutique en ligne et le développement d'un blog. Ces projets ont été l'occasion d'appliquer toutes les compétences acquises tout au long de l'année dans un contexte de groupe, nécessitant une communication efficace et une gestion rigoureuse des tâches.
+            </p>
+        </div>
+    
+        <div class="blog-entry">
+            <h3 data-fr="Tout au long de l'année : Ydays" data-en="Throughout the Year: Ydays">Tout au long de l'année : Ydays</h3>
+            <p data-fr="Les Ydays ont été une constante tout au long de l'année. Ce temps dédié aux projets innovants m'a permis de travailler sur des projets en C# avec YnovJam, ainsi que sur des challenges de cybersécurité avec HackyNov. Ces expériences ont enrichi mon parcours en me confrontant à des situations réelles et en me préparant aux défis du monde professionnel." 
+               data-en="Ydays have been a constant throughout the year. This time dedicated to innovative projects allowed me to work on C# projects with YnovJam, as well as on cybersecurity challenges with HackyNov. These experiences enriched my journey by confronting me with real-world situations and preparing me for the challenges of the professional world.">
+               Les Ydays ont été une constante tout au long de l'année. Ce temps dédié aux projets innovants m'a permis de travailler sur des projets en C# avec YnovJam, ainsi que sur des challenges de cybersécurité avec HackyNov. Ces expériences ont enrichi mon parcours en me confrontant à des situations réelles et en me préparant aux défis du monde professionnel.
+            </p>
+        </div>
+    </section>
+    
+        
+    <section id="contact" class="contact">
+        <h2 data-fr="Joignons nos forces pour l'excellence en programmation et en cours de formation pour la cybersécurité."
+            data-en="Let's join forces for excellence in programming and cybersecurity training.">
+            Joignons nos forces pour l'excellence en programmation et en cours de formation pour la cybersécurité.
+        </h2>
+        <p data-fr="Les informations soumises dans ce formulaire seront envoyées à mon email professionnel : theboringoftetsu@gmail.com. N'hésitez pas à me contacter directement si vous avez besoin d'informations supplémentaires."
+           data-en="The information submitted in this form will be sent to my professional email: theboringoftetsu@gmail.com. Feel free to contact me directly if you need further information.">
+            Les informations soumises dans ce formulaire seront envoyées à mon email professionnel : theboringoftetsu@gmail.com. N'hésitez pas à me contacter directement si vous avez besoin d'informations supplémentaires.
+        </p>
+        <form action="mailto:theboringoftetsu@gmail.com" method="post" enctype="text/plain">
+            <label for="name" data-fr="Nom complet" data-en="Full Name">Nom complet</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email" data-fr="Email" data-en="Email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone" data-fr="Mobile" data-en="Mobile">Mobile</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="message" data-fr="Message" data-en="Message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" data-fr="Envoyer le message" data-en="Send Message">Envoyer le message</button>
+        </form>
+    </section>           
     </main>
+    <script src="scripts.js"></script>
 </body>
 </html>

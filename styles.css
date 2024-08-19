@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
+    padding-top: 80px; /* Compense la hauteur du header fixe */
 }
 
 header {
@@ -11,13 +12,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: flex; /* Ceci assure un affichage horizontal */
+    flex-wrap: nowrap; /* Pour éviter que les éléments ne passent à la ligne */
 }
 
 nav ul li {
@@ -27,13 +33,38 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff66cc;
+}
+
+.languages {
+    display: flex; /* Alignement horizontal des éléments */
+    align-items: center;
 }
 
 .languages a {
     margin-left: 10px;
     text-decoration: none;
     color: #fff;
+    display: flex;
+    align-items: center;
 }
+
+.languages a:hover {
+    color: #ff66cc;
+}
+
+.languages svg {
+    margin-right: 5px; /* Espacement entre le drapeau et le texte */
+}
+
+
+
+
+/* Style pour le reste du contenu */
 
 .intro, .whoami, .services, .tools, .projects, .skills, .character, .experience, .certifications, .appointment, .blogs, .contact {
     padding: 50px;
@@ -72,9 +103,19 @@ h1 {
 
 .intro-image img {
     border-radius: 50%;
-    border: 5px solid #ff66cc;
     width: 150px;
+    height: 150px;
+    object-fit: cover; /* Pour que l'image soit bien contenue dans le cercle */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre douce autour de l'image */
+    background: rgba(255, 255, 255, 0.1); /* Fond léger et transparent pour l'effet de verre givré */
+    backdrop-filter: blur(10px); /* Effet de flou pour l'arrière-plan */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Bordure subtile et semi-transparente */
 }
+
+
+
+
+
 
 .whoami {
     display: flex;
@@ -121,31 +162,37 @@ button {
 .services {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .service {
     width: 30%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.service img {
-    width: 100px;
-    margin-bottom: 20px;
+.service i {
+    color: #ff66cc;
+    margin-bottom: 15px;
 }
 
 .service h3 {
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .service ul {
     list-style: none;
     padding: 0;
     text-align: left;
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 .service ul li {
     margin-bottom: 10px;
 }
+
 
 .tools-logos {
     display: flex;
@@ -167,54 +214,205 @@ button {
 
 .project {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    margin-bottom: 30px;
 }
 
-.project img {
-    width: 200px;
+.project i {
+    font-size: 40px; /* Taille de l'icône */
     margin-right: 20px;
+    color: #ff66cc; /* Couleur de l'icône */
 }
 
 .project-details {
     max-width: 60%;
 }
 
+.project-details h3 {
+    margin-bottom: 10px;
+    color: #ff66cc; /* Couleur du titre du projet */
+}
+
+.project-details p {
+    margin: 5px 0;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style général de la section */
 .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #1a1a1a;
+    padding: 50px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff66cc;
+    text-transform: uppercase;
 }
 
 .skill-set {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
-.skill-set .skill {
-    width: 30%;
+.skill {
+    background-color: #2c2c2c;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
     text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    background-color: #ff66cc;
+}
+
+.skill i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #ff66cc;
+    transition: color 0.3s ease;
+}
+
+.skill:hover i {
+    color: #fff;
+}
+
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.skill p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+
+
+/* Section Caractère */
+.character {
+    background-color: #1a1a1a;
+    padding: 50px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.character h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff66cc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .character-traits {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
-.character-traits .trait {
-    width: 30%;
+.trait {
+    background-color: #2c2c2c;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 250px;
     text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.trait:hover {
+    transform: scale(1.05);
+    background-color: #ff66cc;
+}
+
+.trait i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ff66cc;
+    transition: color 0.3s ease;
+}
+
+.trait:hover i {
+    color: #fff;
+}
+
+.trait h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.trait p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+
 
 .experience {
     display: flex;
     justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 50px;
+    border-radius: 10px;
+    color: #fff;
 }
 
 .academic-background, .professional-experience {
     width: 45%;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.academic-background:hover, .professional-experience:hover {
+    transform: scale(1.05);
+    background-color: #333;
 }
 
 .entry {
@@ -223,16 +421,79 @@ button {
 
 .entry h3 {
     margin-bottom: 10px;
+    font-size: 24px;
+    color: #ff66cc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ff66cc;
+    padding-bottom: 5px;
 }
+
+.entry p {
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.entry:hover h3 {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.entry:hover p {
+    color: #fff;
+}
+
+.entry:before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 50px;
+    background-color: #ff66cc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+
+
 
 .certifications {
     text-align: center;
+    margin: 50px 0;
 }
 
-.certifications img {
-    width: 200px;
-    margin: 10px;
+.certification {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
+
+.cert-item {
+    max-width: 300px;
+    margin: 20px;
+    text-align: left;
+}
+
+.cert-item i {
+    font-size: 48px;
+    color: #ff66cc; /* Couleur de l'icône */
+    margin-bottom: 10px;
+}
+
+.cert-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cert-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
 
 .appointment {
     text-align: center;
@@ -251,17 +512,128 @@ button {
     margin-right: 20px;
 }
 
+
+.availability {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le contenu horizontalement */
+    gap: 20px; /* Espace entre l'icône et le bouton */
+    margin-top: 20px; /* Ajoute un espace au-dessus de la section */
+}
+
+.availability i {
+    color: #ff66cc; /* Couleur de l'icône */
+}
+
+.availability button {
+    background-color: #ff66cc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.availability button:hover {
+    background-color: #e055b3;
+}
+
+
+
+.tools-logos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Pour permettre l'enroulement sur les petits écrans */
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.tool i {
+    color: #fff; /* Couleur des icônes */
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.tool p {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.tool i:hover {
+    color: #ff66cc; 
+}
+
+
+
+
 .blogs {
     text-align: center;
+    padding: 50px 0;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.blogs h2 {
+    font-size: 36px;
+    color: #ff66cc;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.blogs h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #ff66cc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
 }
 
 .blogs .blog-entry {
+    background-color: #2a2a2a;
+    padding: 20px;
     margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogs .blog-entry:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .blogs .blog-entry h3 {
-    margin-bottom: 10px;
+    font-size: 28px;
+    color: #ff66cc;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
 }
+
+.blogs .blog-entry p {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.blogs .blog-entry:hover h3 {
+    color: #e0e0e0;
+}
+
 
 .contact form {
     display: flex;
@@ -285,4 +657,208 @@ button {
 
 .contact form button {
     margin-top: 20px;
+}
+
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .intro, .whoami, .services, .tools, .projects, .skills, .character, .experience, .certifications, .appointment, .blogs, .contact {
+        padding: 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-text, .intro-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 100px;
+    }
+
+    .whoami {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whoami-image img {
+        width: 100%;
+    }
+
+    .whoami-text {
+        max-width: 100%;
+    }
+
+    .skills, .tools-logos, .service {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projects .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        margin-bottom: 20px;
+    }
+
+    .experience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .academic-background, .professional-experience {
+        width: 100%;
+    }
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .intro-text h1 {
+        font-size: 36px;
+    }
+
+    .service {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* CoDE Exclusives pour le responsives adapter à tous les appareils */
+
+/* Styles pour les petits écrans (smartphones) */
+@media (max-width: 480px) {
+    .intro-text h1 {
+        font-size: 32px; /* Réduire la taille du texte principal */
+    }
+
+    .intro-text, .intro-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 80px; /* Réduire la taille de l'image sur mobile */
+    }
+
+    .whoami {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whoami-image img {
+        width: 100%; /* Image s'adapte à la largeur de l'écran */
+    }
+
+    .whoami-text {
+        max-width: 100%;
+    }
+
+    .skills, .tools-logos, .service {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projects .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-details {
+        max-width: 100%;
+    }
+
+    .experience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .academic-background, .professional-experience {
+        width: 100%;
+    }
+
+    .availability button {
+        width: 100%; /* Bouton de rendez-vous prend toute la largeur sur mobile */
+    }
+}
+
+/* Styles pour les écrans moyens (tablettes) */
+@media (max-width: 768px) {
+    .intro-text h1 {
+        font-size: 36px; /* Adapter la taille du texte pour tablettes */
+    }
+
+    .service {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .intro-text, .whoami-text, .project-details {
+        max-width: 90%; /* Réduire la largeur maximale pour les tablettes */
+    }
+
+    .projects .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .academic-background, .professional-experience {
+        width: 100%;
+    }
+}
+
+/* Styles pour les très grands écrans (ordinateurs de bureau, TV) */
+
+@media (min-width: 1200px) {
+    .intro-text h1 {
+        font-size: 56px; /* Agrandir la taille du texte sur les grands écrans */
+    }
+
+    .intro-image img {
+        width: 200px; /* Augmenter la taille de l'image de profil */
+    }
+
+    .service {
+        width: 30%; /* Garder les services sur une ligne */
+    }
+
+    .whoami-image img {
+        width: 500px; /* Image plus large pour les grands écrans */
+    }
+
+    .project-details {
+        max-width: 70%; /* Augmenter la largeur pour les grands écrans */
+    }
 }
