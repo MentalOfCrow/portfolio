@@ -1,9 +1,14 @@
+/* Bonjour si vous checker mes commentaires  */
+/* j'en ais besoins pour mes futures projets car je suis pas tres doué en css  */
+/* Donc beaucoup de commentaire mais ca m'aide à développer mes compétences  */
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
-    padding-top: 80px; /* Compense la hauteur du header fixe */
+    padding-top: 80px; /* Ca Compense la hauteur du header fixe */
 }
 
 header {
@@ -41,7 +46,7 @@ nav ul li a:hover {
 }
 
 .languages {
-    display: flex; /* Alignement horizontal des éléments */
+    display: flex; /* c'est un Alignement horizontal des éléments */
     align-items: center;
 }
 
@@ -58,13 +63,13 @@ nav ul li a:hover {
 }
 
 .languages svg {
-    margin-right: 5px; /* Espacement entre le drapeau et le texte */
+    margin-right: 5px; /* pour Espacement entre le drapeau et le texte */
 }
 
 
 
 
-/* Style pour le reste du contenu */
+/* Le Styleee pour le reste du contenu */
 
 .intro, .whoami, .services, .tools, .projects, .skills, .character, .experience, .certifications, .appointment, .blogs, .contact {
     padding: 50px;
@@ -105,11 +110,11 @@ h1 {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    object-fit: cover; /* Pour que l'image soit bien contenue dans le cercle */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre douce autour de l'image */
-    background: rgba(255, 255, 255, 0.1); /* Fond léger et transparent pour l'effet de verre givré */
-    backdrop-filter: blur(10px); /* Effet de flou pour l'arrière-plan */
-    border: 2px solid rgba(255, 255, 255, 0.5); /* Bordure subtile et semi-transparente */
+    object-fit: cover;                                   /* Pour que l'image soit bien contenue dans le cercle */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);        /* Pour l'Ombre douce autour de l'image */
+    background: rgba(255, 255, 255, 0.1);            /* permet 1Fond léger et transparent pour l'effet de verre givré */
+    backdrop-filter: blur(10px);                      /* assez dure à mettre en place : Effet de flou pour l'arrière-plan  */
+    border: 2px solid rgba(255, 255, 255, 0.5);    /* rappelle : Bordure subtile et semi-transparente */
 }
 
 
@@ -131,6 +136,11 @@ h1 {
 .whoami-text {
     max-width: 50%;
 }
+
+
+
+
+
 
 .skills {
     display: flex;
@@ -194,6 +204,8 @@ button {
 }
 
 
+
+
 .tools-logos {
     display: flex;
     flex-wrap: wrap;
@@ -219,9 +231,9 @@ button {
 }
 
 .project i {
-    font-size: 40px; /* Taille de l'icône */
+    font-size: 40px;             /* Dans la catégorie projet Taille de l'icône  */
     margin-right: 20px;
-    color: #ff66cc; /* Couleur de l'icône */
+    color: #ff66cc;            /*Puis la Couleur de l'icône */
 }
 
 .project-details {
@@ -230,7 +242,7 @@ button {
 
 .project-details h3 {
     margin-bottom: 10px;
-    color: #ff66cc; /* Couleur du titre du projet */
+    color: #ff66cc;          /* C'est laCouleur du titre du projet */
 }
 
 .project-details p {
@@ -241,35 +253,83 @@ button {
 
 
 
+.tech-watch {
+    background-color: #2b2b2b;                       /* Le Fond gris foncé élégant */
+    padding: 40px 25px;
+    margin: 35px 0;
+    border-radius: 8px;
+    border: 1px solid #444;                         /* Bordure subtile pour une bonne délimitation */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);      /* Ombre légère pour un effet de profondeur */
+}
+
+.tech-watch h2 {
+    text-align: center;
+    font-size: 2rem;                                  /* Taille légèrement réduite pour un meilleur équilibre visuel */
+    color: #ff66cc;                                 /* Rose vif pour contraster avec le fond sombre */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.tech-watch p {
+    font-size: 1.1rem;
+    color: #d0d0d0;                               /* C'est Texte en gris clair pour une bonne lisibilité */
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;           /* permet pour la Police moderne et élégante */
+}
+
+.tech-watch ul {
+    list-style-type: disc;                      /* c'est une Puces standard */
+    padding-left: 20px;
+}
+
+.tech-watch ul li {
+    font-size: 1rem;
+    color: #bbbbbb;                         /* permet au Texte en gris moyen pour un contraste doux */
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
 
 
 
 
 
 
+.future-projects {
+    background-color: #2b2b2b;                       /* Le Fond uniforme avec la section précédente */
+    padding: 40px 25px;
+    margin: 35px 0;
+    border-radius: 8px;
+    border: 1px solid #444;                          /* Permet au Bordure discrète et élégante */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);       /* C'est l'Ombre subtile pour uniformité */
+}
+
+.future-projects h2 {
+    text-align: center;
+    font-size: 2rem;                                    /* C'est la Taille réduite pour correspondre à la section précédente */
+    color: #ff66cc;                                   /* Accentuation avec une couleur vive */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.future-projects p {
+    font-size: 1.1rem;
+    color: #d0d0d0;                                   /*sUPer Gris clair pour une lecture confortable */
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;              /* .. Uniformité avec la police précédente */
+}
+
+.future-projects p:last-child {
+    margin-bottom: 0;                                 /*Permet Ajustement du dernier paragraphe */
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Style général de la section */
+/* C'est pour le Style général de la section */
 .skills {
     background-color: #1a1a1a;
     padding: 50px;
@@ -392,6 +452,9 @@ button {
 
 
 
+
+
+
 .experience {
     display: flex;
     justify-content: space-between;
@@ -458,6 +521,7 @@ button {
 
 
 
+
 .certifications {
     text-align: center;
     margin: 50px 0;
@@ -478,7 +542,7 @@ button {
 
 .cert-item i {
     font-size: 48px;
-    color: #ff66cc; /* Couleur de l'icône */
+    color: #ff66cc;      /* Couleur de l'icône sympa la couleur de rose : #ff66cc  */
     margin-bottom: 10px;
 }
 
@@ -516,13 +580,13 @@ button {
 .availability {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centre le contenu horizontalement */
-    gap: 20px; /* Espace entre l'icône et le bouton */
-    margin-top: 20px; /* Ajoute un espace au-dessus de la section */
+    justify-content: center;                        /* Ca Centre le contenu horizontalement */
+    gap: 20px;                                      /* l'Espace entre l'icône et le bouton */
+    margin-top: 20px;                               /* CA ajoute un espace au-dessus de la section */
 }
 
 .availability i {
-    color: #ff66cc; /* Couleur de l'icône */
+    color: #ff66cc;
 }
 
 .availability button {
@@ -546,7 +610,7 @@ button {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
-    flex-wrap: wrap; /* Pour permettre l'enroulement sur les petits écrans */
+    flex-wrap: wrap;                         /* Pour permettre de l'enroulement sur les petits écrans */
 }
 
 .tool {
@@ -557,7 +621,7 @@ button {
 }
 
 .tool i {
-    color: #fff; /* Couleur des icônes */
+    color: #fff;                          /* La Couleur des icônes */
     margin-bottom: 10px;
     transition: color 0.3s ease;
 }
@@ -660,7 +724,7 @@ button {
 }
 
 
-/* Mobile styles */
+/* AaAdapter a tous les appareils Mobile styles */
 @media (max-width: 600px) {
     header nav ul {
         flex-direction: column;
@@ -732,7 +796,7 @@ button {
     }
 }
 
-/* Tablet styles */
+/* Style pour la tablette c'est un essaie mais ca fonctionne !!!  */
 @media (max-width: 768px) {
     .intro-text h1 {
         font-size: 36px;
@@ -748,10 +812,10 @@ button {
 
 /* CoDE Exclusives pour le responsives adapter à tous les appareils */
 
-/* Styles pour les petits écrans (smartphones) */
+/* pour les petits écrans (smartphones) */
 @media (max-width: 480px) {
     .intro-text h1 {
-        font-size: 32px; /* Réduire la taille du texte principal */
+        font-size: 32px;           /* Ca Réduire la taille du texte principal */
     }
 
     .intro-text, .intro-image {
@@ -760,7 +824,7 @@ button {
     }
 
     .intro-image img {
-        width: 80px; /* Réduire la taille de l'image sur mobile */
+        width: 80px;               /* Permet Réduire la taille de l'image sur mobile */
     }
 
     .whoami {
@@ -769,7 +833,7 @@ button {
     }
 
     .whoami-image img {
-        width: 100%; /* Image s'adapte à la largeur de l'écran */
+        width: 100%;                /* Image qui s'adapte à la largeur de l'écran */
     }
 
     .whoami-text {
@@ -805,14 +869,14 @@ button {
     }
 
     .availability button {
-        width: 100%; /* Bouton de rendez-vous prend toute la largeur sur mobile */
+        width: 100%;                /* Bouton permet  de rendez-vous prend toute la largeur sur mobile */
     }
 }
 
-/* Styles pour les écrans moyens (tablettes) */
+/*  pour les écrans moyens (tablettes) */
 @media (max-width: 768px) {
     .intro-text h1 {
-        font-size: 36px; /* Adapter la taille du texte pour tablettes */
+        font-size: 36px; /* S''Adapter la taille du texte pour tablettes = j'ai adapté et je me suis renseigner */
     }
 
     .service {
@@ -821,7 +885,7 @@ button {
     }
 
     .intro-text, .whoami-text, .project-details {
-        max-width: 90%; /* Réduire la largeur maximale pour les tablettes */
+        max-width: 90%; /* tres important !! permet de  Réduire la largeur maximale pour les tablettes */
     }
 
     .projects .project {
@@ -839,26 +903,26 @@ button {
     }
 }
 
-/* Styles pour les très grands écrans (ordinateurs de bureau, TV) */
+/* Style tous simple pour les très grands écrans (ordinateurs de bureau, TV) */
 
 @media (min-width: 1200px) {
     .intro-text h1 {
-        font-size: 56px; /* Agrandir la taille du texte sur les grands écrans */
+        font-size: 56px;              /* Permet Agrandir la taille du texte sur les grands écrans */
     }
 
     .intro-image img {
-        width: 200px; /* Augmenter la taille de l'image de profil */
+        width: 200px;                /* Ca Augmenter la taille de l'image de profil */
     }
 
     .service {
-        width: 30%; /* Garder les services sur une ligne */
+        width: 30%;                  /* Ca Garder les services sur une ligne */
     }
 
     .whoami-image img {
-        width: 500px; /* Image plus large pour les grands écrans */
+        width: 500px;                /* C'est une Image plus large pour les grands écrans */
     }
 
     .project-details {
-        max-width: 70%; /* Augmenter la largeur pour les grands écrans */
+        max-width: 70%;              /* Ca Augmenter la largeur pour les grands écrans */
     }
 }
